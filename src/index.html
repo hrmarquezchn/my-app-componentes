@@ -7,6 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
+<app-root>
+  <mat-toolbar color="primary">
+    <span>Título de tu aplicación</span>
+    <ng-container matSidenavEnd>
+      <button mat-menu-trigger="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu>
+        <button mat-menu-item routerLink="/">Inicio</button>
+        <button mat-menu-item routerLink="/about">Acerca de</button>
+        <button mat-menu-item routerLink="/contact">Contacto</button>
+      </mat-menu>
+    </ng-container>
+  </mat-toolbar>
+  </app-root>
+
 <body>
   <app-root></app-root>
 </body>

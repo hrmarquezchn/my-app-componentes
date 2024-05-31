@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <span>Título de tu aplicación</span>
+    <ng-container matSidenavEnd>
+      <button mat-menu-trigger]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu>
+        <button mat-menu-item routerLink="/">Inicio</button>
+        <button mat-menu-item routerLink="/about">Acerca de</button>
+        <button mat-menu-item routerLink="/contact">Contacto</button>
+      </mat-menu>
+    </ng-container>
+  </mat-toolbar>
